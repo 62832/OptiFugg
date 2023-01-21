@@ -1,0 +1,7 @@
+{
+  "header.optifugg": "Varoitus: OptiFine asennus huomattu ohjelmassa",
+  "message.optifugg": "Yksi tai useampi modi pelissäsi saattaa aiheuttaa ongelmia optifinen käytöstä visuaalisiin artifakteista rikkinäisiin paikalllisen palvelimen-puolen toimivuuteen ja pelin kaatumiseen. Napsauta jompaa kumpaa nappia alhaalla poistaaksesi OptiFinen ja/tai katsoaksesi vaihtoehtoisia modeja käyttöön.",
+
+  "label.optifugg.mods_folder": "Avaa Modit-kansio",
+  "label.optifugg.alternatives": "Selaa vaihtoehtoja"
+}
