@@ -1,0 +1,7 @@
+{
+  "header.optifugg": "Warning: OptiFine installation detected on game client",
+  "message.optifugg": "One or more mods present in your game client might have issues caused by the use of OptiFine, ranging from minor visual artifacts to broken local server-side functionality and game crashes. Click on one of the buttons below to remove OptiFine and/or browse for alternative mods to use instead.",
+
+  "label.optifugg.mods_folder": "Open Mods Folder",
+  "label.optifugg.alternatives": "Browse Alternatives"
+}

@@ -1,0 +1,15 @@
+modLoader = "javafml"
+loaderVersion = "[$loaderVersion,)"
+license = "GPLv3"
+
+[[mods]]
+modId = "optifugg"
+version = "$version"
+displayName = "OptiFugg"
+credits = "Luligabi12, for the original 'No Indium?' mod this was based on."
+authors = "90"
+description = '''
+>HELB WHY IS MY MODPAGG NOD WORGING :D :D :D
+>I USE OBDIFINE BDW :-----DDDDDDDDDD
+'''
+displayTest = "IGNORE_ALL_VERSION"

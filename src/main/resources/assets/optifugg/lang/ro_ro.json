@@ -1,0 +1,7 @@
+{
+  "header.optifugg": "Atenție: O instalație de OptiFine s-a detectat pe clientul de joc",
+  "message.optifugg": "Unul sau mai multe dintre modurile instalate pe acest client pot sufera de probleme cauzate de OptiFine, de la artifacte minore vizuale până la funcționalitate deteriorată pe servere locale și crash-uri. Apăsați pe unul dintre butoanele de jos să dezinstalați OptiFine și/sau să căutați mod-uri alternative cu care să îl înlocuiți.",
+
+  "label.optifugg.mods_folder": "Deschideți fișierul 'mods'",
+  "label.optifugg.alternatives": "Căutați alternative"
+}

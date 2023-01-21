@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "gripe._90.optifugg.mixin",
+  "refmap": "optifugg.mixins.refmap.json",
+  "client": ["WarningScreenAccessor"]
+}
