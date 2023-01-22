@@ -1,4 +1,5 @@
 <h1 align="center">
+<img src="https://optifugg.90.gripe/epin.png" alt="">
 <p>OptiFugg</p>
 </h1>
 
