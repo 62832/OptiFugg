@@ -12,15 +12,10 @@ import net.minecraft.client.gui.screens.multiplayer.WarningScreen;
 import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.ScreenEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.loading.FMLPaths;
 
 import gripe._90.optifugg.mixin.WarningScreenAccessor;
 
-@Mod.EventBusSubscriber(modid = OptiFugg.MODID, value = Dist.CLIENT)
 class OptiFuggWarningScreen extends WarningScreen {
     private static final MutableComponent HEADER = Component.translatable("header.optifugg").withStyle(ChatFormatting.DARK_RED, ChatFormatting.BOLD);
     private static final Component MESSAGE = Component.translatable("message.optifugg");
@@ -29,33 +24,8 @@ class OptiFuggWarningScreen extends WarningScreen {
     private static final Component OPEN_MODS_FOLDER = Component.translatable("label.optifugg.mods_folder");
     private static final Component OPEN_ALTERNATIVES_LINK = Component.translatable("label.optifugg.alternatives");
 
-    private static boolean logged = false;
-
     protected OptiFuggWarningScreen() {
         super(HEADER, MESSAGE, NARRATED_TEXT);
-    }
-
-    @SubscribeEvent
-    public static void onEvent(ScreenEvent.Opening event) {
-        if (logged || !(event.getScreen() instanceof TitleScreen)) return;
-
-        if (OptiFugg.hasOptifine()) {
-            if (OptiFuggConfig.CONFIG.crashOnStartup.get()) {
-                throw new RuntimeException("OptiFine is forbidden by one or more mods on this client. Please remove OptiFine before proceeding.");
-            } else {
-                OptiFugg.LOGGER.warn("OptiFine installation detected. " + (OptiFuggConfig.CONFIG.allowToProceed.get()
-                        ? "This will likely cause issues with any heavily-modded games."
-                        : "Please remove OptiFine before proceeding."));
-
-                if (OptiFuggConfig.CONFIG.showScreen.get()) {
-                    event.setNewScreen(new OptiFuggWarningScreen());
-                }
-            }
-        } else {
-            OptiFugg.LOGGER.info("No OptiFine installation detected.");
-        }
-
-        logged = true;
     }
 
     @Override
