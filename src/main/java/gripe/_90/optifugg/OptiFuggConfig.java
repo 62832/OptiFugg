@@ -6,9 +6,9 @@ class OptiFuggConfig {
     static final ForgeConfigSpec CONFIG_SPEC;
     static final OptiFuggConfig CONFIG;
 
-    public final ForgeConfigSpec.BooleanValue showScreen;
-    public final ForgeConfigSpec.BooleanValue allowToProceed;
-    public final ForgeConfigSpec.BooleanValue crashOnStartup;
+    final ForgeConfigSpec.BooleanValue showScreen;
+    final ForgeConfigSpec.BooleanValue allowToProceed;
+    final ForgeConfigSpec.BooleanValue crashOnStartup;
 
     private OptiFuggConfig(ForgeConfigSpec.Builder builder) {
         showScreen = builder.comment("Show OptiFugg warning screen on startup.")
